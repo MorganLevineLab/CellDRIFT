@@ -13,7 +13,7 @@ The goal of CellDRIFT is to …
 You can install the development version of CellDRIFT like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("kthrush/CellDRIFT")
 ```
 
 ## Example
