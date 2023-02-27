@@ -1,0 +1,69 @@
+---
+title: CellDRIFT
+subtitle: |
+  | Revisiting the bad luck hypothesis: 
+  | Cancer risk and aging are linked to replication-driven changes to the epigenome
+author: |
+  | **Christopher Minteer**, Kyra Thrush, Peter Niimi, Joel Rozowsky, 
+  | Jason Liu, Mor Frank, Thomas McCabe, Erin Hofstatter, 
+  | Mariya Rozenblit, Lajos Pusztai, Kenneth Beckman, Mark Gerstein, 
+  | **Morgan E. Levine**
+
+date: 09.13.2022
+output: 
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    df_print: kable
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# CellDRIFT
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of the *CellDRIFT* package is to provide the essential function predictor used to calculate the **CellDRIFT** as described in <[insert-paper-here]>.
+
+## Installation
+
+You can install the development version of CellDRIFT like so:
+
+``` r
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```
+
+## Usage
+
+This is an example of CellDRIFT run on GSE31848, which we have included in part as exampleDNAm in the package.
+
+```{r example}
+library(CellDRIFT)
+CellDRIFT(exampleDNAm)
+```
+
+## Model Data Details
+
+If you are curious regarding the CellDRIFT model, all components required for its calculation are included as data objects within the package.  
+
+If you would like to look at the composition of the yellow module, you might want to look at the objects in `data(yellow_module_means)` and `data(PCA_yellow)` which give you:  
+ - the **CpGs** in the yellow module with the command `names(yellow_module_means)`  
+ - the **mean values** that are imputed for missing data as the vector `yellow_module_means`  
+ - the **variance** of the model PCs in `PCA_yellow$sdev`  
+ - the **rotations** of the CpG basis to the new PC basis in `PCA_yellow$rotation`  
+ - the **centering** values in `PCA_yellow$center`  
+ - the **original PC training** data in `PCA_yellow$x`  
+ 
+ If you are interested in the tan module, all the same values are available if you simply swap `yellow` for `tan`.  
+ 
+ 
