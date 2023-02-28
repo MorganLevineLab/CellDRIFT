@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of CellDRIFT is to …
+The goal of CellDRIFT is to calculate the undrlying entropic loss (calculated as cellular division events) that occurs with age. CellDRIFT was trained as a replication signal (extracted from a longitudinal hTERT passaging model) and this specific cellular measure links age to cancer outcomes. For most epigenetic clocks (or observations that aging and cancer share common epigenetic signatures) the exact root or driver of the signals or measures are unknown. We set out to provide evidence that DNA methylation changes in response to cellular replication may be one explainable entopic event underlying the observation made by Vogelstein and Tomasetti that more proliferative tissues are more cancer prone. The output of CellDRIFT is calibrated to predict the cumulative popultion doubling events (cPD) of cultured human cells, with the absolute value trained from hTERT immortalized astrocytes.
 
 ## Installation
 
