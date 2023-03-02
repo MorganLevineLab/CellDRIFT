@@ -40,7 +40,7 @@ The goal of the *CellDRIFT* package is to provide the essential function predict
 You can install the development version of CellDRIFT like so:
 
 ``` r
-devtools::install_github("kthrush/CellDRIFT")
+devtools::install_github("MorganLevineLab/CellDRIFT")
 ```
 
 ## Usage
