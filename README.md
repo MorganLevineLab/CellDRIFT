@@ -13,7 +13,7 @@ The goal of CellDRIFT is to calculate the undrlying entropic loss (calculated as
 You can install the development version of CellDRIFT like so:
 
 ``` r
-devtools::install_github("kthrush/CellDRIFT")
+devtools::install_github("MorganLevineLab/CellDRIFT")
 ```
 
 ## Example
